@@ -37,7 +37,6 @@ namespace ASP.NETCoreRDLC2.Controllers
             var products = await GetProducts();
             LocalReport localReport = new LocalReport(path);
             localReport.AddDataSource("DataSet1", products);
-                
 
             var result = localReport.Execute(RenderType.Pdf, extension, parameters, mimtype);
 
