@@ -38,6 +38,7 @@ namespace ASP.NETCoreRDLC2.Controllers
             LocalReport localReport = new LocalReport(path);
             localReport.AddDataSource("DataSet1", products);
 
+
             var result = localReport.Execute(RenderType.Pdf, extension, parameters, mimtype);
 
             return File(result.MainStream, "application/pdf");
