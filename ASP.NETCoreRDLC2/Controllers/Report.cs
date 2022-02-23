@@ -40,6 +40,9 @@ namespace ASP.NETCoreRDLC2.Controllers
 
             var result = localReport.Execute(RenderType.Pdf, extension, parameters, mimtype);
 
+
+
+
             return File(result.MainStream, "application/pdf");
         }
 
