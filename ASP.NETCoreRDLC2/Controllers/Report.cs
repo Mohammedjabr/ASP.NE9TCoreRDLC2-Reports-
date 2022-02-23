@@ -47,6 +47,8 @@ namespace ASP.NETCoreRDLC2.Controllers
         public async Task<IEnumerable<Post>> GetProducts()
         {        
             return await _context.Posts.ToListAsync();
+            //kkdkdkdk
+            //dfdfdf
         }
     }
 }
