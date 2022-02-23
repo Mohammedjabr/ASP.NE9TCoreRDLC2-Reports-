@@ -45,7 +45,9 @@ namespace ASP.NETCoreRDLC2.Controllers
         }
 
         public async Task<IEnumerable<Post>> GetProducts()
-        {        
+        {
+            ///////comment add
+            ////sdsddsd
             return await _context.Posts.ToListAsync();
         }
     }
